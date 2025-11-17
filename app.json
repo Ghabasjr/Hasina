@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Hasina",
+    "slug": "Hasina",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/Hasina.png",
+    "scheme": "hasina",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#222933",
+        "foregroundImage": "./assets/images/Hasina.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.WAKE_LOCK",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ],
+      "foregroundService": {
+        "type": "mediaPlayback"
+      },
+      "package": "com.ghabasjr.Hasina"
+    },
+    "splash": {
+      "image": "./assets/images/Hasina.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#1F1B16"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/Hasina.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "preventAutoHide": true
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
