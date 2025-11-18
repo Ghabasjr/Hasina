@@ -22,8 +22,8 @@ export default function RootLayout() {
 
 
   return (
-    <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme} children={undefined}>
-      <Stack initialRouteName="splash/index" screenOptions={{ headerShown: false }}>
+    <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
+      <Stack initialRouteName="/" screenOptions={{ headerShown: false }}>
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="quran-audio" />
         <Stack.Screen name="read" />
